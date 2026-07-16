@@ -213,6 +213,11 @@
   }
 }
 /* faq Ends */
+@media (max-width: 576px) {
+   section{
+      padding: var(--space-7) 0;
+   }
+}
 
 /* custom cursor starts */
 /* ===========================
