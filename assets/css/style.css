@@ -279,13 +279,13 @@ section {
   transition: 0.3s;
 }
 .menu-toggle.active span:nth-child(1) {
-  transform: rotate(45deg) translateY(10px);
+  transform: rotate(45deg) translate(8px, 6px);
 }
 .menu-toggle.active span:nth-child(2) {
   opacity: 0;
 }
 .menu-toggle.active span:nth-child(3) {
-  transform: rotate(-45deg) translateY(-10px);
+  transform: rotate(-45deg) translate(6px, -6px);
 }
 .logo {
   display: flex;
@@ -364,6 +364,12 @@ section {
   border-radius: 50%;
   background: #22c55e;
   box-shadow: 0 0 12px #22c55e;
+  animation: blink-animation 900ms steps(2, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
 .hero-content {
   max-width: 600px;
@@ -559,7 +565,7 @@ section {
 }
 /* =========================== WHY CHOOSE ME =========================== */
 .why {
-  padding: var(--space-8) 0;
+  /* padding: var(--space-8) 0; */
   background: var(--color-background);
 }
 .why-grid {
@@ -643,7 +649,7 @@ section {
 }
 /* =========================== PROCESS SECTION =========================== */
 .process {
-  padding: var(--space-8) 0;
+  /* padding: var(--space-8) 0; */
   background: var(--color-background);
   overflow: hidden;
 }
@@ -742,10 +748,10 @@ section {
   margin-top: 20px;
 }
 /* =========================== CONTACT =========================== */
-.contact {
-  /* padding: 120px 0; */
+/* .contact {
+  padding: 120px 0;
   padding: var(--space-8) 0;
-}
+} */
 .contact-grid {
   display: grid;
   grid-template-columns: 380px 1fr;
@@ -858,10 +864,10 @@ section {
 }
 
 /* faq css starts */
-.faq {
-  /* padding-top: 120px; */
+/* .faq {
+  padding-top: 120px;
   padding-top: var(--space-8);
-}
+} */
 
 .faq-item {
   background: var(--color-surface);
@@ -909,10 +915,10 @@ section {
 /* faq css ends */
 
 /* stats section starts */
-.stats {
-  /* padding: 100px 0; */
+/* .stats {
+  padding: 100px 0;
   padding: var(--space-8) 0;
-}
+} */
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1031,9 +1037,9 @@ section {
   box-shadow: 0 10px 25px rgba(198, 255, 0, 0.25);
 }
 .footer-social i.fiverr {
-    font-family: --font-heading;
-    font-size: 1.2em;
-    font-weight: var(--fw-semibold);
+  font-family: --font-heading;
+  font-size: 1.2em;
+  font-weight: var(--fw-semibold);
 }
 .footer-nav a {
   position: relative;
